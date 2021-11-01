@@ -1,0 +1,73 @@
+
+  
+  
+ 
+
+  /******************************************
+  Book card
+  *******************************************/ 
+    
+   h5{
+    margin:0px;
+    font-size:1.4em;
+    font-weight:700;
+  }
+  p{
+    font-size:12px;
+  }
+  .book-card{
+    height:22em ;
+    width:100%;  
+    display:flex; 
+    flex-direction:column;
+    position:relative;
+    border-radius:12px;
+    overflow:hidden;
+    -webkit-box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.75);
+    margin: auto;
+    margin-bottom: 2rem;
+  }  
+  .book-image{
+    height:100%;
+    width:100%;
+    padding:1em 2em;
+    position:Absolute;
+    top:0px;
+    -webkit-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+    -o-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+    transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+    background-image:url('https://template.canva.com/EADzX_WUjiY/1/0/251w-xpZlfo7EIAI.jpg');
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position:center ;
+  }     
+  .book-description{
+    height:0em;
+    padding:0px 1em;    
+  }  
+  /* Property Cards Hover States */  
+  .book-card:hover .book-description{
+  
+    background-color: #ffffffe1;
+    height:60%;
+    width:100%;
+    position:absolute;
+    bottom:0em;
+    -webkit-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+    -o-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+    transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);    
+    text-align:center;
+    padding: 0;
+  }
+  .book-card:hover .book-description h5{    
+    color:white;
+    width: 100%;
+  } 
+  
+  @media (max-width: 770px) {    
+    .book-card{
+      height:18em ;
+    }        
+  }  
